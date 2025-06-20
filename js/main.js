@@ -8,6 +8,10 @@ myText.addEventListener('input', () => {
   result.textContent = textLength + '/' + limit
 
   if (textLength > limit) {
-    myText.computedStyleMap.borderColor = 'red'
+    myText.style.borderColor = 'red'
+    result.style.color = 'red'
+  } else {
+    myText.style.borderColor = ' rgb(14, 190, 14)'
+    result.style.color = 'rgb(14, 190, 14)'
   }
 })
